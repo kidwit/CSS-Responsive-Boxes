@@ -1,3 +1,116 @@
+* {
+  border: 1px solid #dcdcf5;
+  height: 100%;
+}
+
+
 body {
   background: papayawhip;
+  margin: 0;
+  text-align: center;
+  color: #6A5ACD;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.a {
+  max-width: 100%;
+
+}
+
+.b {
+  background-color: white;
+  flex-grow: 2;
+  height: 60vh;
+
+
+}
+
+.c {
+  width: 30%;
+  flex-grow: 2;
+  background-color: #FFE4B5;
+
+}
+
+.d {
+  flex-grow: 2;
+  width: 30%;
+
+}
+
+.e {
+  flex-grow: 2;
+  width: 30%;
+
+}
+
+
+.d, .e {
+  background-color: #FFE4B5;
+  flex-grow: 2;
+}
+
+.a{
+  background-color: #FFDAB9;
+  flex-grow: .3;
+}
+
+.f {
+  background-color: goldenrod;
+  flex-grow: .3;
+}
+
+
+
+#row3 {
+  display: flex;
+  height: 18vh;
+}
+
+.brow3 {
+  height: 70vh;
+}
+
+
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    min-width: 100%;
+    max-height: 25%;
+  }
+
+
+  .b {
+    min-width: 70%;
+    max-height: 75%;
+  }
+
+  .brow3 {
+    position: relative;
+    top: -2.3vh;
+    min-width: 70%;
+  }
+
+  #row3 {
+    min-height: 30.5%;
+    min-width: 70%;
+  }
+
+  .f {
+    position: absolute;
+    right: 0vh;
+    bottom: -.3vh;
+    min-width: 30%;
+    max-height: 74.47%;
+  }
 }
